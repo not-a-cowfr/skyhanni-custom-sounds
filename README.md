@@ -1,2 +1,4 @@
-# skyhanni-custom-sounds
-automatically generates a resource pack that lets you use custom sounds for skyhanni
+automatically generates a resource pack so that you can use custom sounds with skyhanni
+
+todo:
+- [ ] add conversion for common sound formats to .ogg
