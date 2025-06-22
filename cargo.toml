@@ -1,10 +1,20 @@
 [package]
-name = "skyhanni_custom_sounds"
+name = "custom-sounds"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 rfd = "0.9"
 serde_json = "1.0.134"
 zip = { version = "2.2.2", default-features = false }
 walkdir = "2.5.0"
+
+[profile.release]
+opt-level = "z"
+debug = true
+lto = true
+codegen-units = 1
+panic = "abort"
+incremental = true
+split-debuginfo = "packed"
+strip = "symbols"
